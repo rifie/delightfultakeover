@@ -1,0 +1,42 @@
+---
+layout: dtphotomasonry
+title: From Amsterdam to Brussels
+date: 2019-05-02
+description: On a very winter holiday in the two cities that always shows us different weather. Cheese and hot chocolate was a real deal here. So sweet. Spent whole day at Rijks Museum, so much history!
+img : /photos/amsterdam-to-brussels/amsterdam-canals.jpg
+photos:
+- amsterdam-badge.jpg
+- amsterdam-building.jpg
+- amsterdam-canal.jpg
+- amsterdam-canals.jpg
+- amsterdam-central.jpg
+- amsterdam-river.jpg
+- rijksmuseum-ship.jpg
+- rijksmuseum-spear.jpg
+- rijksmuseum-vangogh.jpg
+- brussels-badge.jpg
+- brussels.jpg
+- brussels-building.jpg
+- brussels-central.jpg
+
+---
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/amsterdam-to-brussels/{{ photo }}"><img src="/photos/amsterdam-to-brussels/{{ photo }}" data-original="/photos/amsterdam-to-brussels/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}
+
+{% for video in page.videos %}
+ <div class="uk-width-1-2@m mbl">
+<video loop uk-video="autoplay: inview">
+    <source src="/photos/amsterdam-to-brussels/{{ video }}" type="video/mp4">
+</video>
+</div>
+{% endfor %}
+
+{% for photo in page.photos2 %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/amsterdam-to-brussels/{{ photo }}"><img src="/photos/amsterdam-to-brussels/{{ photo }}" data-original="/photos/amsterdam-to-brussels/{{ photo }}"/></a>
+</div>
+{% endfor %}

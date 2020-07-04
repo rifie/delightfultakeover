@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Delightful Takeover Photography | {%if page.title %}{{ page.title }} {% else %} {{ site.title }} {% endif %}</title>
+  <meta name="description" content="Delightful Takeover Photography | {%if page.description %} {{page.description}} {% else %} {{ site.description }} {% endif %}" />
+	<link rel="stylesheet" href="/assets/css/uikit.min.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/dt.css">
+		<script src="/assets/js/uikit.min.js"></script>
+        <script type="text/javascript" src="/assets/js/lazyload.min.js"></script>
+
+ <meta content="{{ site.title }}" property="og:site_name">{% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">{% else %}
+    <meta content="{{ site.title }}" property="og:title">{% endif %}{% if page.title %}
+    <meta content="article" property="og:type">{% else %}
+    <meta content="website" property="og:type">{% endif %}{% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">{% else %}
+    <meta content="{{ site.description }}" property="og:description">{% endif %}{% if page.url %}
+    <meta content="https://delightfultakeover.us{{ page.url }}" property="og:url">{% endif %}
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@rifie" />
+    {% if page.title %}
+    <meta name="twitter:title" content="{{page.title}}" /> 
+    {% else %} 
+    <meta name="twitter:title" content="{{post.title}}" />
+    {% endif %}
+    {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}" />
+    {% else %}
+    <meta name="twitter:description" content="{{ site.description }}" />
+    {% endif %}
+    <meta name="twitter:image" content="https://delightfultakeover.us{{page.img}}" />
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/assets/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i" rel="stylesheet">
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("img.lazy").lazyload({
+         effect : "fadeIn"
+        });
+    });
+
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139634862-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139634862-1');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3286113045755976",
+          enable_page_level_ads: true
+     });
+</script>
+
+</head>
+<body>

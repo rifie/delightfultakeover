@@ -1,0 +1,37 @@
+---
+layout: dtphoto
+title: Bali to Lombok
+date: 2019-05-02
+description: From Bali to Lombok with boat with beloved one
+img : /photos/lombok/lombok-batupayung.jpg
+photos:
+- bali-calmocean.jpg
+- bali-onaboat.jpg
+- bali-padangbay.jpg
+- eastbali-beach.jpg
+- eastbali-beach2.jpg
+- eastbali-sunrise.jpg
+- giliboat.jpg
+- gilitrawangan-bike.jpg
+- gilitrawangan.jpg
+- gilifromfar.jpg
+- gilimeno-beach.jpg
+- gilimeno-morning.jpg
+- gilimeno-sunrise.jpg
+- gilitrawangan2.jpg
+- gilitrawangan-road.jpg
+- lombok-batupayung.jpg
+- lombok-bluesky.jpg
+- lombok-explore.jpg
+- lombok-explorer2.jpg
+- lombok-senggigi-sunset.jpg
+- lombok-senggigi.jpg
+- lombok-sunset.jpg
+
+---
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/lombok/{{ photo }}"><img src="/photos/lombok/{{ photo }}" data-original="/photos/lombok/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}

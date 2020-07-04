@@ -1,0 +1,43 @@
+---
+layout: dtphoto
+title: Osaka to Tokyo
+date: 2019-05-02
+description: Osaka, Kyoto and Tokyo at the end of winter
+img : /photos/japan/kyoto-fushimiinari.jpg
+photos: 
+- osaka-alley.jpg
+- osaka-dotonbori.jpg
+- osaka-glicoman.jpg
+- osaka-namba.jpg
+- osaka-takoyaki.jpg
+- kyoto-fushimi.jpg
+- kyoto-fushimi2.jpg
+- kyoto-fushimiinari.jpg
+- kyoto-inari.jpg
+- kyoto-kiyomizudera.jpg
+- kyoto=geisha.jpg
+- kyoto-train.jpg
+- tokyo-akihabara.jpg
+- tokyo-akihabaracross.jpg
+- tokyo-facemask.jpg
+- tokyo-station.jpg
+- tokyo-hakusandori.jpg
+- tokyo-suidobashi.jpg
+
+
+---
+
+<div class="uk-width-1-1@m">
+	<div class="videoWrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/vUpnI4eZ_-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/japan/{{ photo }}"><img src="/photos/japan/{{ photo }}" data-original="/photos/japan/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}
+</div>

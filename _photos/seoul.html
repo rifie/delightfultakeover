@@ -1,0 +1,33 @@
+---
+layout: dtphoto
+title: From Busan to Seoul
+date: 2019-05-02
+description: Busan, Daegu and then Seoul with little brother.
+img : /photos/seoul/seoul-rizky.jpg
+photos:
+- busan-yongdusan.jpg
+- daegu-downtown.jpg
+- daegu-station.jpg
+- daegu-yongnam.jpg
+- daegu-autumnleaves.jpg
+- seoul-namdaemun.jpg
+- seoul-redmirror.jpg
+- seoul-rizky.jpg
+- seoul-topokki.jpg
+- seoul-tunnel.jpg
+- seoulbooks.jpg
+- seoultrain.jpg
+---
+
+<div class="uk-width-1-1@m">
+	<div class="videoWrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/JU-pHic3kwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/seoul/{{ photo }}"><img src="/photos/seoul/{{ photo }}" data-original="/photos/seoul/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}

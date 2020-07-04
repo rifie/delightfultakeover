@@ -1,0 +1,32 @@
+---
+layout: dtphotomasonry
+title: London, Manchester to beautiful Edinburgh
+date: 2019-05-03
+description: Went through United Kingdom big cities as a tourist.
+img : /photos/london/manchester-oldtrafford.jpg
+photos: 
+- london-bigben.jpg
+- london-theeye.jpg
+- london-borough.jpg
+- london-cross.jpg
+- london-crossing.jpg
+- london-dog.jpg
+- london-eye.jpg
+- london-stpancras.jpg
+- london-tower.jpg
+- manchester-oldtrafford.jpg
+- edinburg-arthurseat.jpg
+- edinburgh-city.jpg
+- ed2.gif
+- edinburgh-city2.jpg
+- edinburgh-city3.jpg
+- edinburgh-scotland.jpg
+- edinburgh-town.jpg
+---
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/london/{{ photo }}"><img src="/photos/london/{{ photo }}" data-original="/photos/london/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}
+</div>

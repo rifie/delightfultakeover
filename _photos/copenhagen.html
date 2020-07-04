@@ -1,0 +1,50 @@
+---
+layout: dtphotomasonry
+title: Copenhagen in Winter
+date: 2019-05-02
+description: Copenhagen on winter, never forget the 1° Celcius and rainy days. Traveled alone and wondering why there's no sunshine. Loved the city. Will be back again someday.
+img : /photos/copenhagen/copenhagen-Grundtvig-Church.jpg
+photos:
+- copenhagen-central.jpg
+- copenhagen-park.jpg
+- copenhagen-tivoli.jpg
+- copenhagen-nyhavn.jpg
+- copenhagen-city.jpg
+- copenhagen-station.jpg
+- copenhagen-street.jpg
+- copenhagen-door.jpg
+- copenhagen-Grundtvig-Church.jpg
+- copenhagen-superkilen-park.jpg
+
+photos2:
+
+
+videos:
+- copenhagen-1.mp4
+- copenhagen-2.mp4
+- copenhagen-3.mp4
+- copenhagen-4.mp4
+- copenhagen-5.mp4
+
+
+---
+
+{% for photo in page.photos %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/copenhagen/{{ photo }}"><img src="/photos/copenhagen/{{ photo }}" data-original="/photos/copenhagen/{{ photo }}" alt="{{ photo }}"/></a>
+</div>
+{% endfor %}
+
+{% for video in page.videos %}
+ <div class="uk-width-1-2@m mbl">
+<video loop uk-video="autoplay: inview">
+    <source src="/photos/copenhagen/{{ video }}" type="video/mp4">
+</video>
+</div>
+{% endfor %}
+
+{% for photo in page.photos2 %}
+ <div class="uk-width-1-2@m mbl">
+ 	 <a href="/photos/copenhagen/{{ photo }}"><img src="/photos/copenhagen/{{ photo }}" data-original="/photos/copenhagen/{{ photo }}"/></a>
+</div>
+{% endfor %}
